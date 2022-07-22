@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(232, 232, 232);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Amarante', cursive;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Amarante', cursive;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: 'Amarante', cursive;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+/* ******************** header *********************** */
+header {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header img {
+    width: 20vw;
+}
+
+.livraison {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.101);
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.panier {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+#panier {
+    padding-top: 2.5em;
+    color: rgba(255, 255, 255, 0.678);
+    text-decoration: none;
+}
+
+.panier .prix {
+    font-weight: bold;
+    color: white;
+}
+
+.panier .prix::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f07a";
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.678);
+    padding: .5em;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.678);
+} 
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+header nav ul li a {
+    color: rgba(255, 255, 255, 0.678);
+    padding: .5em 1em;
+    border: 0px solid rgba(255, 255, 255, 0.496);
+}
+
+header nav ul li a:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    background-color: rgba(255, 255, 255, 0.496);
+    padding: .5em 1em;
+}
+
+/* ************* Main *************** */
+
+.offre {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.offre figcaption {
+    margin-top: .5em;
+}
+
+h1 {
+    color: rgb(163,188,6);
+    padding-bottom: 1em;
+}
+
+.slick-prev::before, .slick-next::before {
+    font-size: 3rem;
+}
+
+.choisissez {
+    background-color: white;
+    margin-top: 2em;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
+}
+
+.choisissez h2 {
+    color: rgb(163,188,6);
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.tea figure {
+    width: 20%;
+    margin-bottom: 1em;
+}
+
+.tea figcaption {
+    margin-top: 1em;
+}
+
+.tea {
+    display: flex;
+}
+
+.choisissez:hover a{
+    filter: opacity(.5);
+    transform: scale(.9);
+    display: block;
+}
+
+.choisissez  a:hover {
+    transform: scale(1.2);
+    filter:opacity(1);
+} 
+
+
+
+.nouveau {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.new {
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.new h2 {
+    color: rgb(163,188,6);
+}
+
+.new figcaption {
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.new p {
+    padding-bottom: 1em;
+}
+
+.new a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(176,144,103,255);
+    padding: .5em 1em;
+}
+
+.new a:hover {
+    background-color: white;
+    color: rgba(176,144,103,255);
+    border: 1px solid rgba(176,144,103,255);
+}
+
+.new span {
+    font-weight: bold;
+}
+
+footer {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.toolbar nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(0, 0, 0, 0.101);
+    text-transform: uppercase;
+}
+
+.toolbar nav article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.footer h2 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.footer li {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li a {
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.footer li a:hover {
+    color: white;
+}
+
+/* ****************** Responsive tablette ******************* */
+
+@media screen and (max-width: 980px) {
+    .panier {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .nouveau {
+        flex-direction: column;
+    }
+
+    .new {
+        width: 100%;
+    }
+
+    .new img {
+        width: 40%;
+    }
+
+    .new a {
+        padding: .5em 2em;
+    }
+
+    .tea {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article .the {
+        width: 35%;
+        margin-top: 2em;
+    }
+
+    article .the img {
+        width: 50%;
+    }
+}
+
+/* **************** Responsive mobile ****************** */
+
+@media screen and (max-width: 780px) {
+    .offre,.slick {
+        display: none;
+    }
+
+    .panier {
+        flex-direction: column-reverse;
+    }
+
+    .panier {
+        align-items: center;
+    }
+
+    header  a img {
+        margin-top: 4em;
+    }
+
+    header span {
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.318);
+        padding: 1em 1em 1em 2em;
+    }
+
+    #panier {
+        position: absolute;
+        top: 2em;
+        left: -1.5em;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .panier img {
+        width: 30vw;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    footer .toolbar nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer .toolbar nav .icone {
+        width: 40%;
+        margin-top: 2em;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer article {
+        margin-bottom: 2em;
+    }
+}
+
+/* **************page thé ***************** */
+
+.current {
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.496);
+    padding: .5em 1em;
+}
+
+.description {
+    text-align: start;
+    line-height: 1.5em;
+}
+
+.description h2 {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.description img {
+    width: 15%;
+    float: left;
+}
+
+.produit {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.produit img {
+    width: 80%;
+}
+
+/* ***************tablette***************** */
+
+@media screen and (max-width: 980px) {
+    .description img {
+        display: none;
+    }
+
+    .produit {
+        flex-direction: column;
+    }
+
+    .produit img {
+        width: 50%;
+    }
+}
+
+/* **************** Page about****************** */
+.about {
+    background-color: white;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.about h2{
+    font-size: 4rem;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.about h3{
+    color: rgb(163,188,6);
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.amelie {
+    width: 50%;
+    float: left;
+    margin-right: 1em;
+}
+
+.xavier {
+    width: 50%;
+    float: right;
+    margin-left: 1em;
+}
+
+.about .concept {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(234,239,207,255);
+    padding: 2em 1em;
+    margin-top: 1em;
+}
+
+.about .concept .vert {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.vert img {
+    width: 6em;
+}
+
+.vert h4 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 980px) {
+    .about .concept {
+        flex-direction: column;
+    }
+
+    .about .concept img {
+        margin-top: 2em;
+    }
+
+    .amelie, .xavier {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .amelie, .xavier {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* *********************Page product ******************** */
